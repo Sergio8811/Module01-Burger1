@@ -169,6 +169,7 @@ header {
     color: #FFF;
     background-position: center center;
     position: relative;
+    margin-bottom: 80px;
 }
 .banner-title {
     color: #FFF;
@@ -228,10 +229,14 @@ header {
     top: 280px;
     border: 1px solid #FBB731;
     padding: 18px 25px;
+    transition: 1.2s;
 }
 .banner-link:hover {
     background-color: transparent;
     color: #FBB731;
+}
+.menu {
+    padding-top: 20px;
 }
 .menu-header {
     display: flex;
@@ -338,8 +343,7 @@ header {
     left: 29px;
     top: 10px;
 }
-.menu-grid-btn:hover {
-    background-color: transparent;
+.button-up:hover {
     background: #F37335;
 }
 .footer {
@@ -404,6 +408,29 @@ header {
     color: #DEDEDE;
 }
 
+.button-up {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #FBB731;
+    color: #1E2F40;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.menu-grid-btn:hover {
+    background: #F37335;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 0.8;
+}
 .main {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
 }
