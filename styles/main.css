@@ -164,69 +164,53 @@ header {
 .banner-box {
     background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
-    height: 438px;
     background-size: cover;
-    color: #FFF;
     background-position: center center;
-    position: relative;
-    margin-bottom: 80px;
+    padding: 100px;
+    
 }
 .banner-title {
     color: #FFF;
-    font-family: Nunito Sans;
     font-size: 60px;
     font-weight: 900;
-    line-height: 76px; /* 126.667% */
-    text-transform: uppercase;
-    position: absolute;
-    margin-top: 100px;
-    left: 100px;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
 .banner-title span {
     display: flex;
-    width: 95px;
-    height: 28px;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-family: Open Sans;
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
     line-height: 18px; 
     text-transform: uppercase;
-    background: #F37335;
+    background-color: #F37335;
     color: #FFFFFF;
-    border-radius: 28px;    
+    border-radius: 14px;
+    max-width: 96px;
+    margin-bottom: 9px;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
 }
 .banner-text {
-    display: flex;
     max-width: 320px;
     color: #FAF9F9;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.6;
     text-align: left;
-    position: absolute;
-    left: 100px;
-    margin-top: 217px;
-    
+    margin-bottom: 35px; 
 }
 .banner-link {
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 5px;
     color: #1E2F40;
-    background: #FBB731;
-    text-align: center;
-    justify-content: center;
+    background-color: #FBB731;
     font-family: Nunito Sans;
     font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-    position: absolute;
-    left: 100px;
-    top: 280px;
     border: 1px solid #FBB731;
     padding: 18px 25px;
     transition: 1.2s;
@@ -553,4 +537,34 @@ header {
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
 }
