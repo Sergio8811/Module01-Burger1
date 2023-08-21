@@ -673,6 +673,13 @@ header {
     }
     .menu-grid-title {
         font-size: 26px;
+        margin-top: 7px;
+    }
+    .menu-grid-price {
+        margin-bottom: 7px;
+    }
+    .menu-grid-cover, .menu-grid-cover img {
+        height: 320px;
     }
 }
 
