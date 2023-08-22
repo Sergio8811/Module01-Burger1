@@ -694,4 +694,72 @@ header {
     .banner-box {
         background-position: 25% center;
     }
-}
+    .menu-grid-title {
+        font-size: 26px;
+        margin-top: 7px;
+    }
+    .menu-grid-price {
+        margin-bottom: 7px;
+    }
+    .menu-grid-cover, .menu-grid-cover img {
+        height: 180px;
+    }
+    .menu-other .menu-grid-cover, .menu-other .menu-grid-cover img {
+        height: 180px;
+        
+    }
+    .menu-other .menu-grid-item,  .menu-other .menu-grid-cover img {
+        width: 141px;
+    }
+    .menu-grid-btn {
+        width: 129px;
+    }
+    .menu-grid-text {
+        width: 65px;
+        height: 18px;
+        right: 22px;
+        top: 10px;
+    }
+    .menu-grid-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 0;
+        position: absolute;
+        left: 22px;
+        top: 10px;
+    }
+    .menu-other .menu-grid-item {
+        flex: 0 0 129px;
+    }
+    .menu-title {
+        font-size: 26px;
+        line-height: 21px;
+    }
+    .menu-grid-title {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .menu-other {
+        overflow: hidden;
+        height: 454px;
+    }
+    .footer-box {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+    .footer-item h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .promo .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex: 40% 49% 0;
+        max-width: 320px;
+    }
+
+}    
