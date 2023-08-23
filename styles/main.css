@@ -304,9 +304,6 @@ header {
     cursor: pointer;
     padding: 8px 32px;
 }
-.menu-grid-icon {
-    
-}
 .menu-grid-text {
     flex: auto;
     color: #1E2F40;
@@ -648,7 +645,7 @@ header {
     }
     .button-up.visible {
         display: none;
-}
+    }
 }
 @media (max-width: 567px) {
     .header {
@@ -658,7 +655,7 @@ header {
     .header-logo {
     width: 116px;
     height: 37px;
-}
+    }
     .breadcrumbs a {
         font-size: 15px;
     }
