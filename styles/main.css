@@ -322,23 +322,24 @@ header {
     color: #fff;
     padding-top: 117px;
     padding-bottom: 106px;
+    margin-top: 27px;
 }
 .footer-box {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
-.logo {
+.footer-logo {
     width: 63px;
     height: 56px;
-}
-.footer-item {
-    flex: 0 0 auto;
 }
 .footer-item h2 {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 12px;
+    margin-top: 0;
+    line-height: 1.5;
 }
 .footer-item ul,
 .footer-tel ul {
@@ -612,14 +613,14 @@ header {
     }
     .menu-other {
         overflow: hidden;
-        height: 672px;
+        height: 132vw;
     }
     .menu-other .menu-grid{
         display: flex;
         width: auto;
         overflow-x: scroll;
         overflow-y: hidden;
-        padding-bottom: 100px;
+        padding-bottom: 44vw;
     }
     .menu-other .menu-grid-item {
         flex: 0 0 281px;
@@ -642,6 +643,9 @@ header {
     .header {
         gap: 21px;
     }
+    .button-up.visible {
+        display: none;
+}
 }
 @media (max-width: 567px) {
     .header {
@@ -687,6 +691,7 @@ header {
     }
     .menu-grid {
         gap: 25px 15px;
+        margin-bottom: 50px;
     }
     .menu-grid-cover {
         height: 56vw;
@@ -706,6 +711,12 @@ header {
     .menu-grid-btn {
         padding: 8px 21px;
     }
+    .menu-other {
+        height: 132vw;
+    }
+    .menu-other .container {
+        padding-right: 0;
+    }
     .menu-other .menu-grid-cover {
         height: 56vw;
     }
@@ -714,6 +725,36 @@ header {
     }
     .menu-other .menu-grid-item {
         flex: 0 0 39vw;
+    }
+    .footer {
+        padding-top: 61px;
+        padding-bottom: 61px;
+        margin-top: -12px;
+    }
+    .footer-list + .footer-list-tel {
+    display: none;
+    }
+    .footer-tel {
+        display: block;
+    }
+    .footer-box {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "logo tel" "link link" "info info";
+    gap: 0;
+    }
+    .footer-item:nth-child(1) {
+        grid-area: logo;
+    }
+    .footer-item:nth-child(2) {
+        grid-area: link;
+    }
+    .footer-item:nth-child(3) {
+        grid-area: info;
+    }
+    .footer-tel {
+        grid-area: tel;
+        text-align: right;
     }
 }
 
